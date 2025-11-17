@@ -50,9 +50,9 @@ A small Python service that listens for new messages in a Microsoft Teams channe
 Then in your terminal do
 ```git clone https://github.com/USERNAME/REPOSITORY.git```
 
-# In terminal means the red box here 
-![alt text](image-1.png)
- if it's not showing right click on the blue area and click open integrated terminal
+# In terminal means the box area at the bottom of visual studio code or the red box here 
+![image 1](image-1.png)
+ if it's not showing right click on the project explorer area (blue area) and click open integrated terminal
 
 
 # 2. Create a virtual environment in your preffered editor
@@ -76,7 +76,7 @@ Then in your terminal do
 ```pip install python-dotenv```
 
 
-# 4. Create a .env file for environment variables
+# 4. Create a .env file for project variables
 
  You will use your own generated keys for this file, though I will give you access to my sandbox discord for testing purposes. You will never have to use 'Production keys' during development. 
 
