@@ -21,7 +21,7 @@ lru_logger = logging.getLogger('lru-dict')
 #This is a comment (2.0)
 
 ## Application Interface keys so we can access Microsoft Teams and Discord respecitvley 
-MC_TOKEN = os.getenv('MC_API_KEY')
+##MC_TOKEN = os.getenv('MC_API_KEY')
 DC_TOKEN = os.getenv('DC_API_KEY')
 
 
@@ -31,13 +31,14 @@ intents.members = True
 intents.message_content = True
 
 ## Creating an instance of the bot with our intents and command prefix
-bot = commands.Bot(command_prefix='!', intents=intents)
+bot = commands.Bot(command_prefix='?', intents=intents)
 bot.embed = discord.Embed() ## Attatching a embed object to the bot instance (embed means fancy display)
 
 # Our cogs will go here, which are just our commands essentially E.X. 'cogs.Command'
 extensions = []
-
-
+@bot.command()
+async def response(ctx):
+    await ctx.send("Hello! This is a response from the bot!")
 ## This bot event is triggered whenever our bot establishes a connection with discords servers,
 ## it does so by establishing a "web socket" which is a live continous connection.
 @bot.event
