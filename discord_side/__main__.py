@@ -39,10 +39,7 @@ extensions = []
 async def response(ctx):
     await ctx.send("Hello! This is a response from the bot!")
 async def embed_test(ctx):
-    channel = bot.get_channel(1444478949420830952) # Replace with your channel ID
-    embed = discord.Embed(title="Teams", description="Project Plans", color=0x00ff00)
-    embed.add_field(name="User", value="Hey when is...")
-
+    channel = bot.get_channel(1444478949420830952)
     embed_dict = json.load(open(Path(__file__).parent / 'teamsMessage.json'))
     logging.info(f'Loaded embed dict: {embed_dict}')
     embed = discord.Embed.from_dict(embed_dict)
