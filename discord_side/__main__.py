@@ -8,6 +8,10 @@ from dotenv import load_dotenv
 import json
 from pathlib import Path
 
+
+
+
+# This is a comment! :D
 load_dotenv()
 
 ## Setting up logging for doing "print" statements, except better
@@ -15,6 +19,7 @@ load_dotenv()
 root_logger = logging.getLogger()
 root_logger.setLevel(logging.INFO)
 
+# This is a secondary, better comment.
 lru_logger = logging.getLogger('lru-dict')
 
 #This is a comment (2.0)
